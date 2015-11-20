@@ -3,8 +3,11 @@
 import './app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'expose?$!expose?jQuery!jquery';
+import "bootstrap-webpack";
 import { Router, Route, Link } from 'react-router';
-import DegreePls from './components/DegreePls/DegreePls.jsx'
+import DegreePls from './components/DegreePls/DegreePls.jsx';
+
 
 ReactDOM.render((
     <Router>
