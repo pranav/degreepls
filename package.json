@@ -1,0 +1,30 @@
+{
+  "name": "degreepls",
+  "version": "0.0.0",
+  "description": "",
+  "main": "webpack.config-compiled.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pranav/degreepls"
+  },
+  "author": "Pranav Gandhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranav/degreepls/issues"
+  },
+  "homepage": "https://github.com/pranav/degreepls",
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "webpack": "^1.12.6"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.0",
+    "babel-core": "^6.2.0",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18"
+  }
+}
