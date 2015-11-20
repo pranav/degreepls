@@ -1,5 +1,6 @@
 'use es6';
 
+import './app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link } from 'react-router';
