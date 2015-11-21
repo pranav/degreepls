@@ -5,14 +5,15 @@ import SearchForm from '../SearchForm/SearchForm.jsx';
 export default class Dashboard extends React.Component {
     render() {
         return (
-            <div className="Dashboard-wrapper">
+            <div>
                 <div className="Dashboard">
                     <h1>
                         Degree pls<br />
-                        <small>Degree pls helps you find the classes you didn't know you were looking for.</small>
+                        <small>Degree pls helps you find the classes you've been looking for.</small>
                     </h1>
                     <SearchForm />
                 </div>
+                {this.props.children}
             </div>
         );
     }

@@ -1,18 +1,14 @@
-.Dashboard-wrapper {
+.Dashboard {
   background: #00ccff;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
   color: white;
+  padding: 10%;
 
-  .Dashboard {
-    padding: 20%;
+  h1 {
+    margin: 0;
 
-
-    h1 {
-      margin: 0;
-
-      small {
-        color: white;
-      }
+    small {
+      color: white;
     }
   }
 
