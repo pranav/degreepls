@@ -3,9 +3,13 @@
 import './DegreePls.scss';
 import React from 'react';
 
-export default React.createClass({
-    render: function() {
-        return <h1 className="DegreePls-wrapper">Hallo!</h1>
+export default class DegreePls extends React.Component {
+    render() {
+        return (
+            <div>
+                {this.props.children}
+            </div>
+        )
     }
-});
+}
 
