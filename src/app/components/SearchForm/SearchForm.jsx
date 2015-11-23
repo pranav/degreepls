@@ -1,9 +1,12 @@
 import './SearchForm.scss';
 import 'react-select'
 import React from 'react';
+import {Router, History} from 'react-router';
 import Select from 'react-select';
 
 export default React.createClass({
+
+    mixins: [History],
 
     getInitialState: function() {
         return {
@@ -16,20 +19,18 @@ export default React.createClass({
                     label: 'What is the best Computer Science course?'
                 }
             ],
+            searchValue: 'Try searching for "What is the easiest Comparative Study of Cultures course?"'
         };
     },
 
     componentDidMount: function() {
-        var value = `Try searching for "${this.state.searchOptions[0].value}"`;
         if(this.props.params !== undefined) {
-            value = this.props.params.searchParam;
+            this.setState({searchValue: this.props.params.searchParam});
         }
-        this.setState({ searchValue: value });
     },
 
     goToSearch: function(search) {
-        window.location.hash = "#dashboard/search/"+search;
-        this.setState({searchValue: search});
+        this.history.pushState(null, `/dashboard/search/${search}`);
     },
 
     render: function() {
