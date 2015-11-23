@@ -9,7 +9,7 @@ export default class Dashboard extends React.Component {
                 <div className="Dashboard">
                     <h1>
                         Degree pls<br />
-                        <small>Degree pls helps you find the classes you've been looking for.</small>
+                        <small>Degree pls helps you find the classes you're looking for.</small>
                     </h1>
                     <SearchForm />
                 </div>
